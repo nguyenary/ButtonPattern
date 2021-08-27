@@ -1,0 +1,1264 @@
+.css-button {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: 700;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: none;
+}
+
+.css-button:active {
+  top: 2px;
+}
+
+.css-button-retro {
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 0;
+}
+
+.css-button-retro:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+}
+
+.css-button-retro:hover:after {
+  top: 0;
+  left: 0;
+}
+
+.css-button-retro--rose:after {
+  background: #ff6392;
+}
+
+.css-button-retro--blue:after {
+  background: #3d348b;
+}
+
+.css-button-retro--sky:after {
+  background: #3a86ff;
+}
+
+.css-button-retro--red:after {
+  background: #ef233c;
+}
+
+.css-button-retro--green:after {
+  background: #80ed99;
+}
+
+.css-button-retro--yellow:after {
+  background: #ffe566;
+}
+
+.css-button-retro--sand:after {
+  background: #ced4da;
+}
+
+.css-button-retro--grey:after {
+  background: #6c757d;
+}
+
+.css-button-retro--black:after {
+  background: #343a40;
+}
+
+.css-button-sliding-to-right {
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.css-button-sliding-to-right:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+
+.css-button-sliding-to-right:hover {
+  color: #fff;
+}
+
+.css-button-sliding-to-right:hover:after {
+  width: 100%;
+}
+
+.css-button-sliding-to-right--rose {
+  border: 2px solid #ff0a78;
+  color: #ff0a78;
+}
+
+.css-button-sliding-to-right--rose:after {
+  background: #ff0a78;
+}
+
+.css-button-sliding-to-right--blue {
+  border: 2px solid #2c0b8e;
+  color: #2c0b8e;
+}
+
+.css-button-sliding-to-right--blue:after {
+  background: #2c0b8e;
+}
+
+.css-button-sliding-to-right--sky {
+  border: 2px solid #43f;
+  color: #43f;
+}
+
+.css-button-sliding-to-right--sky:after {
+  background: #43f;
+}
+
+.css-button-sliding-to-right--red {
+  border: 2px solid #d90429;
+  color: #d90429;
+}
+
+.css-button-sliding-to-right--red:after {
+  background: #d90429;
+}
+
+.css-button-sliding-to-right--green {
+  border: 2px solid #57cc99;
+  color: #57cc99;
+}
+
+.css-button-sliding-to-right--green:after {
+  background: #57cc99;
+}
+
+.css-button-sliding-to-right--yellow {
+  border: 2px solid #ffd819;
+  color: #ffd819;
+}
+
+.css-button-sliding-to-right--yellow:after {
+  background: #ffd819;
+}
+
+.css-button-sliding-to-right--sand {
+  border: 2px solid #adb5bd;
+  color: #adb5bd;
+}
+
+.css-button-sliding-to-right--sand:after {
+  background: #adb5bd;
+}
+
+.css-button-sliding-to-right--grey {
+  border: 2px solid #495057;
+  color: #495057;
+}
+
+.css-button-sliding-to-right--grey:after {
+  background: #495057;
+}
+
+.css-button-sliding-to-right--black {
+  border: 2px solid #212529;
+  color: #212529;
+}
+
+.css-button-sliding-to-right--black:after {
+  background: #212529;
+}
+
+.css-button-sliding-to-left {
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.css-button-sliding-to-left:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+
+.css-button-sliding-to-left:hover {
+  color: #fff;
+}
+
+.css-button-sliding-to-left:hover:after {
+  width: 100%;
+}
+
+.css-button-sliding-to-left--rose {
+  border: 2px solid #ff0a78;
+  color: #ff0a78;
+}
+
+.css-button-sliding-to-left--rose:after {
+  background: #ff0a78;
+}
+
+.css-button-sliding-to-left--blue {
+  border: 2px solid #2c0b8e;
+  color: #2c0b8e;
+}
+
+.css-button-sliding-to-left--blue:after {
+  background: #2c0b8e;
+}
+
+.css-button-sliding-to-left--sky {
+  border: 2px solid #43f;
+  color: #43f;
+}
+
+.css-button-sliding-to-left--sky:after {
+  background: #43f;
+}
+
+.css-button-sliding-to-left--red {
+  border: 2px solid #d90429;
+  color: #d90429;
+}
+
+.css-button-sliding-to-left--red:after {
+  background: #d90429;
+}
+
+.css-button-sliding-to-left--green {
+  border: 2px solid #57cc99;
+  color: #57cc99;
+}
+
+.css-button-sliding-to-left--green:after {
+  background: #57cc99;
+}
+
+.css-button-sliding-to-left--yellow {
+  border: 2px solid #ffd819;
+  color: #ffd819;
+}
+
+.css-button-sliding-to-left--yellow:after {
+  background: #ffd819;
+}
+
+.css-button-sliding-to-left--sand {
+  border: 2px solid #adb5bd;
+  color: #adb5bd;
+}
+
+.css-button-sliding-to-left--sand:after {
+  background: #adb5bd;
+}
+
+.css-button-sliding-to-left--grey {
+  border: 2px solid #495057;
+  color: #495057;
+}
+
+.css-button-sliding-to-left--grey:after {
+  background: #495057;
+}
+
+.css-button-sliding-to-left--black {
+  border: 2px solid #212529;
+  color: #212529;
+}
+
+.css-button-sliding-to-left--black:after {
+  background: #212529;
+}
+
+.css-button-sliding-to-bottom {
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.css-button-sliding-to-bottom:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+}
+
+.css-button-sliding-to-bottom:hover {
+  color: #fff;
+}
+
+.css-button-sliding-to-bottom:hover:after {
+  height: 100%;
+}
+
+.css-button-sliding-to-bottom--rose {
+  border: 2px solid #ff0a78;
+  color: #ff0a78;
+}
+
+.css-button-sliding-to-bottom--rose:after {
+  background: #ff0a78;
+}
+
+.css-button-sliding-to-bottom--blue {
+  border: 2px solid #2c0b8e;
+  color: #2c0b8e;
+}
+
+.css-button-sliding-to-bottom--blue:after {
+  background: #2c0b8e;
+}
+
+.css-button-sliding-to-bottom--sky {
+  border: 2px solid #43f;
+  color: #43f;
+}
+
+.css-button-sliding-to-bottom--sky:after {
+  background: #43f;
+}
+
+.css-button-sliding-to-bottom--red {
+  border: 2px solid #d90429;
+  color: #d90429;
+}
+
+.css-button-sliding-to-bottom--red:after {
+  background: #d90429;
+}
+
+.css-button-sliding-to-bottom--green {
+  border: 2px solid #57cc99;
+  color: #57cc99;
+}
+
+.css-button-sliding-to-bottom--green:after {
+  background: #57cc99;
+}
+
+.css-button-sliding-to-bottom--yellow {
+  border: 2px solid #ffd819;
+  color: #ffd819;
+}
+
+.css-button-sliding-to-bottom--yellow:after {
+  background: #ffd819;
+}
+
+.css-button-sliding-to-bottom--sand {
+  border: 2px solid #adb5bd;
+  color: #adb5bd;
+}
+
+.css-button-sliding-to-bottom--sand:after {
+  background: #adb5bd;
+}
+
+.css-button-sliding-to-bottom--grey {
+  border: 2px solid #495057;
+  color: #495057;
+}
+
+.css-button-sliding-to-bottom--grey:after {
+  background: #495057;
+}
+
+.css-button-sliding-to-bottom--black {
+  border: 2px solid #212529;
+  color: #212529;
+}
+
+.css-button-sliding-to-bottom--black:after {
+  background: #212529;
+}
+
+.css-button-sliding-to-top {
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.css-button-sliding-to-top:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+}
+
+.css-button-sliding-to-top:hover {
+  color: #fff;
+}
+
+.css-button-sliding-to-top:hover:after {
+  height: 100%;
+}
+
+.css-button-sliding-to-top--rose {
+  border: 2px solid #ff0a78;
+  color: #ff0a78;
+}
+
+.css-button-sliding-to-top--rose:after {
+  background: #ff0a78;
+}
+
+.css-button-sliding-to-top--blue {
+  border: 2px solid #2c0b8e;
+  color: #2c0b8e;
+}
+
+.css-button-sliding-to-top--blue:after {
+  background: #2c0b8e;
+}
+
+.css-button-sliding-to-top--sky {
+  border: 2px solid #43f;
+  color: #43f;
+}
+
+.css-button-sliding-to-top--sky:after {
+  background: #43f;
+}
+
+.css-button-sliding-to-top--red {
+  border: 2px solid #d90429;
+  color: #d90429;
+}
+
+.css-button-sliding-to-top--red:after {
+  background: #d90429;
+}
+
+.css-button-sliding-to-top--green {
+  border: 2px solid #57cc99;
+  color: #57cc99;
+}
+
+.css-button-sliding-to-top--green:after {
+  background: #57cc99;
+}
+
+.css-button-sliding-to-top--yellow {
+  border: 2px solid #ffd819;
+  color: #ffd819;
+}
+
+.css-button-sliding-to-top--yellow:after {
+  background: #ffd819;
+}
+
+.css-button-sliding-to-top--sand {
+  border: 2px solid #adb5bd;
+  color: #adb5bd;
+}
+
+.css-button-sliding-to-top--sand:after {
+  background: #adb5bd;
+}
+
+.css-button-sliding-to-top--grey {
+  border: 2px solid #495057;
+  color: #495057;
+}
+
+.css-button-sliding-to-top--grey:after {
+  background: #495057;
+}
+
+.css-button-sliding-to-top--black {
+  border: 2px solid #212529;
+  color: #212529;
+}
+
+.css-button-sliding-to-top--black:after {
+  background: #212529;
+}
+
+.css-button-neumorphic {
+  background: #efefef;
+  box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
+  color: #585858;
+}
+
+.css-button-neumorphic:active {
+  box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
+}
+
+.css-button-gradient {
+  background-size: 120% auto;
+}
+
+.css-button-gradient:hover {
+  background-position: 100%;
+}
+
+.css-button-gradient:active {
+  top: 2px;
+}
+
+.css-button-gradient--1 {
+  background-image: linear-gradient(315deg, #4ecdc4, #c797eb 75%);
+}
+
+.css-button-gradient--2 {
+  background-image: linear-gradient(315deg, #bdc3c7, #2c3e50 75%);
+}
+
+.css-button-gradient--3 {
+  background-image: linear-gradient(315deg, #f8b500, #fceabb 75%);
+}
+
+.css-button-gradient--4 {
+  background-image: linear-gradient(315deg, #43cea2, #185a9d 75%);
+}
+
+.css-button-gradient--5 {
+  background-image: linear-gradient(315deg, #000428, #004e92 75%);
+}
+
+.css-button-gradient--6 {
+  background-image: linear-gradient(315deg, #f0ecfc, #c797eb 75%);
+}
+
+.css-button-gradient--7 {
+  background-image: linear-gradient(315deg, #c02425, #f0cb35 75%);
+}
+
+.css-button-gradient--8 {
+  background-image: linear-gradient(315deg, #7b4397, #dc2430 75%);
+}
+
+.css-button-gradient--9 {
+  background-image: linear-gradient(315deg, #833ab4, #fd1d1d 50%, #fcb045);
+}
+
+.css-button-sharp {
+  border-radius: 0;
+}
+
+.css-button-sharp:hover {
+  background: #fff;
+}
+
+.css-button-sharp:active {
+  top: 2px;
+}
+
+.css-button-sharp--rose {
+  border: 2px solid #ff0a78;
+  background: #ff0a78;
+}
+
+.css-button-sharp--rose:hover {
+  color: #ff0a78;
+}
+
+.css-button-sharp--blue {
+  border: 2px solid #2c0b8e;
+  background: #2c0b8e;
+}
+
+.css-button-sharp--blue:hover {
+  color: #2c0b8e;
+}
+
+.css-button-sharp--sky {
+  border: 2px solid #43f;
+  background: #43f;
+}
+
+.css-button-sharp--sky:hover {
+  color: #43f;
+}
+
+.css-button-sharp--red {
+  border: 2px solid #d90429;
+  background: #d90429;
+}
+
+.css-button-sharp--red:hover {
+  color: #d90429;
+}
+
+.css-button-sharp--green {
+  border: 2px solid #57cc99;
+  background: #57cc99;
+}
+
+.css-button-sharp--green:hover {
+  color: #57cc99;
+}
+
+.css-button-sharp--yellow {
+  border: 2px solid #ffd819;
+  background: #ffd819;
+}
+
+.css-button-sharp--yellow:hover {
+  color: #ffd819;
+}
+
+.css-button-sharp--sand {
+  border: 2px solid #adb5bd;
+  background: #adb5bd;
+}
+
+.css-button-sharp--sand:hover {
+  color: #adb5bd;
+}
+
+.css-button-sharp--grey {
+  border: 2px solid #495057;
+  background: #495057;
+}
+
+.css-button-sharp--grey:hover {
+  color: #495057;
+}
+
+.css-button-sharp--black {
+  border: 2px solid #212529;
+  background: #212529;
+}
+
+.css-button-sharp--black:hover {
+  color: #212529;
+}
+
+.css-button-rounded {
+  border-radius: 5px;
+}
+
+.css-button-rounded:hover {
+  background: #fff;
+}
+
+.css-button-rounded:active {
+  top: 2px;
+}
+
+.css-button-rounded--rose {
+  border: 2px solid #ff0a78;
+  background: #ff0a78;
+}
+
+.css-button-rounded--rose:hover {
+  color: #ff0a78;
+}
+
+.css-button-rounded--blue {
+  border: 2px solid #2c0b8e;
+  background: #2c0b8e;
+}
+
+.css-button-rounded--blue:hover {
+  color: #2c0b8e;
+}
+
+.css-button-rounded--sky {
+  border: 2px solid #43f;
+  background: #43f;
+}
+
+.css-button-rounded--sky:hover {
+  color: #43f;
+}
+
+.css-button-rounded--red {
+  border: 2px solid #d90429;
+  background: #d90429;
+}
+
+.css-button-rounded--red:hover {
+  color: #d90429;
+}
+
+.css-button-rounded--green {
+  border: 2px solid #57cc99;
+  background: #57cc99;
+}
+
+.css-button-rounded--green:hover {
+  color: #57cc99;
+}
+
+.css-button-rounded--yellow {
+  border: 2px solid #ffd819;
+  background: #ffd819;
+}
+
+.css-button-rounded--yellow:hover {
+  color: #ffd819;
+}
+
+.css-button-rounded--sand {
+  border: 2px solid #adb5bd;
+  background: #adb5bd;
+}
+
+.css-button-rounded--sand:hover {
+  color: #adb5bd;
+}
+
+.css-button-rounded--grey {
+  border: 2px solid #495057;
+  background: #495057;
+}
+
+.css-button-rounded--grey:hover {
+  color: #495057;
+}
+
+.css-button-rounded--black {
+  border: 2px solid #212529;
+  background: #212529;
+}
+
+.css-button-rounded--black:hover {
+  color: #212529;
+}
+
+.css-button-fully-rounded {
+  border-radius: 20px;
+}
+
+.css-button-fully-rounded:hover {
+  background: #fff;
+}
+
+.css-button-fully-rounded:active {
+  top: 2px;
+}
+
+.css-button-fully-rounded--rose {
+  border: 2px solid #ff0a78;
+  background: #ff0a78;
+}
+
+.css-button-fully-rounded--rose:hover {
+  color: #ff0a78;
+}
+
+.css-button-fully-rounded--blue {
+  border: 2px solid #2c0b8e;
+  background: #2c0b8e;
+}
+
+.css-button-fully-rounded--blue:hover {
+  color: #2c0b8e;
+}
+
+.css-button-fully-rounded--sky {
+  border: 2px solid #43f;
+  background: #43f;
+}
+
+.css-button-fully-rounded--sky:hover {
+  color: #43f;
+}
+
+.css-button-fully-rounded--red {
+  border: 2px solid #d90429;
+  background: #d90429;
+}
+
+.css-button-fully-rounded--red:hover {
+  color: #d90429;
+}
+
+.css-button-fully-rounded--green {
+  border: 2px solid #57cc99;
+  background: #57cc99;
+}
+
+.css-button-fully-rounded--green:hover {
+  color: #57cc99;
+}
+
+.css-button-fully-rounded--yellow {
+  border: 2px solid #ffd819;
+  background: #ffd819;
+}
+
+.css-button-fully-rounded--yellow:hover {
+  color: #ffd819;
+}
+
+.css-button-fully-rounded--sand {
+  border: 2px solid #adb5bd;
+  background: #adb5bd;
+}
+
+.css-button-fully-rounded--sand:hover {
+  color: #adb5bd;
+}
+
+.css-button-fully-rounded--grey {
+  border: 2px solid #495057;
+  background: #495057;
+}
+
+.css-button-fully-rounded--grey:hover {
+  color: #495057;
+}
+
+.css-button-fully-rounded--black {
+  border: 2px solid #212529;
+  background: #212529;
+}
+
+.css-button-fully-rounded--black:hover {
+  color: #212529;
+}
+
+.css-button-shadow-border {
+  box-shadow: inset 2px 2px 2px 0 hsla(0, 0%, 100%, 0.5),
+    7px 7px 20px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.css-button-shadow-border:active {
+  top: 2px;
+}
+
+.css-button-shadow-border--rose {
+  background-color: #ff0a78;
+}
+
+.css-button-shadow-border--rose:hover {
+  background-color: #ff6392;
+}
+
+.css-button-shadow-border--blue {
+  background-color: #2c0b8e;
+}
+
+.css-button-shadow-border--blue:hover {
+  background-color: #3d348b;
+}
+
+.css-button-shadow-border--sky {
+  background-color: #43f;
+}
+
+.css-button-shadow-border--sky:hover {
+  background-color: #3a86ff;
+}
+
+.css-button-shadow-border--red {
+  background-color: #d90429;
+}
+
+.css-button-shadow-border--red:hover {
+  background-color: #ef233c;
+}
+
+.css-button-shadow-border--green {
+  background-color: #57cc99;
+}
+
+.css-button-shadow-border--green:hover {
+  background-color: #80ed99;
+}
+
+.css-button-shadow-border--yellow {
+  background-color: #ffd819;
+}
+
+.css-button-shadow-border--yellow:hover {
+  background-color: #ffe566;
+}
+
+.css-button-shadow-border--sand {
+  background-color: #adb5bd;
+}
+
+.css-button-shadow-border--sand:hover {
+  background-color: #ced4da;
+}
+
+.css-button-shadow-border--grey {
+  background-color: #495057;
+}
+
+.css-button-shadow-border--grey:hover {
+  background-color: #6c757d;
+}
+
+.css-button-shadow-border--black {
+  background-color: #212529;
+}
+
+.css-button-shadow-border--black:hover {
+  background-color: #343a40;
+}
+
+.css-button-shadow-border-sliding,
+.css-button-shadow-border-sliding:after {
+  box-shadow: inset 2px 2px 2px 0 hsla(0, 0%, 100%, 0.5),
+    7px 7px 20px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.css-button-shadow-border-sliding:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  right: 0;
+}
+
+.css-button-shadow-border-sliding:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.css-button-shadow-border-sliding:active {
+  top: 2px;
+}
+
+.css-button-shadow-border-sliding--rose {
+  background: #ff0a78;
+  z-index: 1;
+}
+
+.css-button-shadow-border-sliding--rose:after {
+  background: #ff6392;
+}
+
+.css-button-shadow-border-sliding--blue {
+  background: #2c0b8e;
+  z-index: 1;
+}
+
+.css-button-shadow-border-sliding--blue:after {
+  background: #3d348b;
+}
+
+.css-button-shadow-border-sliding--sky {
+  background: #43f;
+  z-index: 1;
+}
+
+.css-button-shadow-border-sliding--sky:after {
+  background: #3a86ff;
+}
+
+.css-button-shadow-border-sliding--red {
+  background: #d90429;
+  z-index: 1;
+}
+
+.css-button-shadow-border-sliding--red:after {
+  background: #ef233c;
+}
+
+.css-button-shadow-border-sliding--green {
+  background: #57cc99;
+  z-index: 1;
+}
+
+.css-button-shadow-border-sliding--green:after {
+  background: #80ed99;
+}
+
+.css-button-shadow-border-sliding--yellow {
+  background: #ffd819;
+  z-index: 1;
+}
+
+.css-button-shadow-border-sliding--yellow:after {
+  background: #ffe566;
+}
+
+.css-button-shadow-border-sliding--sand {
+  background: #adb5bd;
+  z-index: 1;
+}
+
+.css-button-shadow-border-sliding--sand:after {
+  background: #ced4da;
+}
+
+.css-button-shadow-border-sliding--grey {
+  background: #495057;
+  z-index: 1;
+}
+
+.css-button-shadow-border-sliding--grey:after {
+  background: #6c757d;
+}
+
+.css-button-shadow-border-sliding--black {
+  background: #212529;
+  z-index: 1;
+}
+
+.css-button-shadow-border-sliding--black:after {
+  background: #343a40;
+}
+
+.css-button-arrow:after {
+  content: "\BB";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
+
+.css-button-arrow:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.css-button-arrow:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.css-button-arrow--rose {
+  background-color: #ff6392;
+}
+
+.css-button-arrow--blue {
+  background-color: #3d348b;
+}
+
+.css-button-arrow--sky {
+  background-color: #3a86ff;
+}
+
+.css-button-arrow--red {
+  background-color: #ef233c;
+}
+
+.css-button-arrow--green {
+  background-color: #80ed99;
+}
+
+.css-button-arrow--yellow {
+  background-color: #ffe566;
+}
+
+.css-button-arrow--sand {
+  background-color: #ced4da;
+}
+
+.css-button-arrow--grey {
+  background-color: #6c757d;
+}
+
+.css-button-arrow--black {
+  background-color: #343a40;
+}
+
+.css-button-shadow {
+  box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
+}
+
+.css-button-shadow:active {
+  box-shadow: 0 4px 2px -3px #ccc, 0 4px 5px 1px #ccc, 0 2px 7px 1px #ccc;
+  top: 0;
+}
+
+.css-button-shadow--rose {
+  background-color: #ff6392;
+}
+
+.css-button-shadow--blue {
+  background-color: #3d348b;
+}
+
+.css-button-shadow--sky {
+  background-color: #3a86ff;
+}
+
+.css-button-shadow--red {
+  background-color: #ef233c;
+}
+
+.css-button-shadow--green {
+  background-color: #80ed99;
+}
+
+.css-button-shadow--yellow {
+  background-color: #ffe566;
+}
+
+.css-button-shadow--sand {
+  background-color: #ced4da;
+}
+
+.css-button-shadow--grey {
+  background-color: #6c757d;
+}
+
+.css-button-shadow--black {
+  background-color: #343a40;
+}
+
+.css-button-3d--rose {
+  background: #ff6392;
+  box-shadow: 0 5px #ff0a78;
+}
+
+.css-button-3d--rose:hover {
+  box-shadow: 0 3px #ff0a78;
+  top: 1px;
+}
+
+.css-button-3d--rose:active {
+  box-shadow: 0 0 #ff0a78;
+  top: 5px;
+}
+
+.css-button-3d--blue {
+  background: #3d348b;
+  box-shadow: 0 5px #2c0b8e;
+}
+
+.css-button-3d--blue:hover {
+  box-shadow: 0 3px #2c0b8e;
+  top: 1px;
+}
+
+.css-button-3d--blue:active {
+  box-shadow: 0 0 #2c0b8e;
+  top: 5px;
+}
+
+.css-button-3d--sky {
+  background: #3a86ff;
+  box-shadow: 0 5px #43f;
+}
+
+.css-button-3d--sky:hover {
+  box-shadow: 0 3px #43f;
+  top: 1px;
+}
+
+.css-button-3d--sky:active {
+  box-shadow: 0 0 #43f;
+  top: 5px;
+}
+
+.css-button-3d--red {
+  background: #ef233c;
+  box-shadow: 0 5px #d90429;
+}
+
+.css-button-3d--red:hover {
+  box-shadow: 0 3px #d90429;
+  top: 1px;
+}
+
+.css-button-3d--red:active {
+  box-shadow: 0 0 #d90429;
+  top: 5px;
+}
+
+.css-button-3d--green {
+  background: #80ed99;
+  box-shadow: 0 5px #57cc99;
+}
+
+.css-button-3d--green:hover {
+  box-shadow: 0 3px #57cc99;
+  top: 1px;
+}
+
+.css-button-3d--green:active {
+  box-shadow: 0 0 #57cc99;
+  top: 5px;
+}
+
+.css-button-3d--yellow {
+  background: #ffe566;
+  box-shadow: 0 5px #ffd819;
+}
+
+.css-button-3d--yellow:hover {
+  box-shadow: 0 3px #ffd819;
+  top: 1px;
+}
+
+.css-button-3d--yellow:active {
+  box-shadow: 0 0 #ffd819;
+  top: 5px;
+}
+
+.css-button-3d--sand {
+  background: #ced4da;
+  box-shadow: 0 5px #adb5bd;
+}
+
+.css-button-3d--sand:hover {
+  box-shadow: 0 3px #adb5bd;
+  top: 1px;
+}
+
+.css-button-3d--sand:active {
+  box-shadow: 0 0 #adb5bd;
+  top: 5px;
+}
+
+.css-button-3d--grey {
+  background: #6c757d;
+  box-shadow: 0 5px #495057;
+}
+
+.css-button-3d--grey:hover {
+  box-shadow: 0 3px #495057;
+  top: 1px;
+}
+
+.css-button-3d--grey:active {
+  box-shadow: 0 0 #495057;
+  top: 5px;
+}
+
+.css-button-3d--black {
+  background: #343a40;
+  box-shadow: 0 5px #212529;
+}
+
+.css-button-3d--black:hover {
+  box-shadow: 0 3px #212529;
+  top: 1px;
+}
+
+.css-button-3d--black:active {
+  box-shadow: 0 0 #212529;
+  top: 5px;
+}
